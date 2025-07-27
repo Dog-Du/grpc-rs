@@ -33,7 +33,7 @@ struct WorkerCli {
 
 fn main() {
     let cli = WorkerCli::parse();
-    let port = cli.driver_port0.unwrap_or(cli.driver_port1.unwrap_or(32766));
+    let port = cli.driver_port0.unwrap_or(cli.driver_port1.unwrap_or(8080));
 
     let _log_guard = init_log(
         env::var(LOG_FILE)
