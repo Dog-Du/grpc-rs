@@ -17,6 +17,7 @@ $ git clone https://github.com/pingcap/grpc.git
 
 3. Build benchmark
 
+`grpc` and `grpc-rs` need to be in the same folder
 ```
 $ cd grpc-rs
 $ cargo xtask submodule
