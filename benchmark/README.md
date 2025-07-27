@@ -27,8 +27,10 @@ $ cargo build -p benchmark --release
 
 ```
 $ cd ../grpc
+$ git submodule update --init
 $ python3 tools/run_tests/run_performance_tests.py -l rust
 ```
+The recommended python version is 3.10
 
 Checkout `python3 tools/run_tests/run_performance_tests.py --help` to see custom options.
 
