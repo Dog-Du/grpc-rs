@@ -1,14 +1,6 @@
 pub const GRPC_ARES: u32 = 1;
 pub const GRPC_IF_NAMETOINDEX: u32 = 1;
 pub const GRPC_ALLOW_EXCEPTIONS: u32 = 1;
-pub const GRPC_COMPRESSION_REQUEST_ALGORITHM_MD_KEY: &[u8; 31] =
-    b"grpc-internal-encoding-request\0";
-pub const GRPC_COMPRESSION_CHANNEL_DEFAULT_ALGORITHM: &[u8; 35] =
-    b"grpc.default_compression_algorithm\0";
-pub const GRPC_COMPRESSION_CHANNEL_DEFAULT_LEVEL: &[u8; 31] = b"grpc.default_compression_level\0";
-pub const GRPC_COMPRESSION_CHANNEL_ENABLED_ALGORITHMS_BITSET: &[u8; 43] =
-    b"grpc.compression_enabled_algorithms_bitset\0";
-pub const GRPC_SLICE_BUFFER_INLINE_ELEMENTS: u32 = 8;
 pub const GRPC_ARG_ENABLE_CENSUS: &[u8; 12] = b"grpc.census\0";
 pub const GRPC_ARG_ENABLE_LOAD_REPORTING: &[u8; 19] = b"grpc.loadreporting\0";
 pub const GRPC_ARG_SERVER_CALL_METRIC_RECORDING: &[u8; 34] = b"grpc.server_call_metric_recording\0";
@@ -73,9 +65,6 @@ pub const GRPC_ARG_LB_POLICY_NAME: &[u8; 20] = b"grpc.lb_policy_name\0";
 pub const GRPC_ARG_RING_HASH_LB_RING_SIZE_CAP: &[u8; 32] = b"grpc.lb.ring_hash.ring_size_cap\0";
 pub const GRPC_ARG_SOCKET_MUTATOR: &[u8; 20] = b"grpc.socket_mutator\0";
 pub const GRPC_ARG_SOCKET_FACTORY: &[u8; 20] = b"grpc.socket_factory\0";
-pub const GRPC_ARG_GZIP_COMPRESSION_LEVEL: &[u8; 28] = b"grpc.gzip_compression_level\0";
-pub const GRPC_ARG_MIN_MESSAGE_SIZE_TO_COMPRESS: &[u8; 39] =
-    b"grpc.gprc_min_message_size_to_compress\0";
 pub const GRPC_ARG_MAX_CHANNEL_TRACE_EVENT_MEMORY_PER_NODE: &[u8; 45] =
     b"grpc.max_channel_trace_event_memory_per_node\0";
 pub const GRPC_ARG_ENABLE_CHANNELZ: &[u8; 21] = b"grpc.enable_channelz\0";
@@ -122,6 +111,15 @@ pub const GRPC_ARG_AUTHORIZATION_POLICY_PROVIDER: &[u8; 35] =
     b"grpc.authorization_policy_provider\0";
 pub const GRPC_ARG_SERVER_CONFIG_CHANGE_DRAIN_GRACE_TIME_MS: &[u8; 59] =
     b"grpc.experimental.server_config_change_drain_grace_time_ms\0";
+pub const GRPC_ARG_DSCP: &[u8; 10] = b"grpc.dscp\0";
+pub const GRPC_COMPRESSION_REQUEST_ALGORITHM_MD_KEY: &[u8; 31] =
+    b"grpc-internal-encoding-request\0";
+pub const GRPC_COMPRESSION_CHANNEL_DEFAULT_ALGORITHM: &[u8; 35] =
+    b"grpc.default_compression_algorithm\0";
+pub const GRPC_COMPRESSION_CHANNEL_DEFAULT_LEVEL: &[u8; 31] = b"grpc.default_compression_level\0";
+pub const GRPC_COMPRESSION_CHANNEL_ENABLED_ALGORITHMS_BITSET: &[u8; 43] =
+    b"grpc.compression_enabled_algorithms_bitset\0";
+pub const GRPC_SLICE_BUFFER_INLINE_ELEMENTS: u32 = 8;
 pub const GRPC_DEFAULT_MAX_SEND_MESSAGE_LENGTH: i32 = -1;
 pub const GRPC_DEFAULT_MAX_RECV_MESSAGE_LENGTH: u32 = 4194304;
 pub const GRPC_WRITE_BUFFER_HINT: u32 = 1;
